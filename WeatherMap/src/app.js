@@ -23,7 +23,7 @@ const getLocation = () => {
 };
 
 // store postion
-const storeLocation = (pos) => {
+const storeLocation = async (pos) => {
   const lat = pos.coords.latitude;
   const lon = pos.coords.longitude;
   // console.log(`lat ${lat} \nlon ${lon}`);
@@ -34,9 +34,13 @@ const storeLocation = (pos) => {
   fetchData(tempUrl);
   fetchCurrentLocation(locationUrl);
 };
-const fetchCurrentLocation = locationUrl => {
-  fetch(locationUrl)
-    .then(res => res.json())
+const fetchCurrentLocation = async locationUrl => {
+  await fetch(locationUrl)
+    .then(res => {
+      
+      console.log(res.json());
+    
+    })
     .then(data => {
       const location = `${data[0].name}, ${data[0].country}`;
       currentLocation.innerHTML = location;
@@ -44,8 +48,8 @@ const fetchCurrentLocation = locationUrl => {
 };
 
 // request data from OpenWeatherMap
-const fetchData = (url) => {
-  fetch(url)
+const fetchData = async (url) => {
+  await fetch(url)
     .then(res => res.json())
     .then(data => {
       handleWeather(data);

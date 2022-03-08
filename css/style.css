@@ -19,6 +19,12 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
 }
+nav{
+	background-color: #0B2343;
+	color:#ffcc05;
+	display: inline-block;
+	text-align: left;
+}
 
 ul{
 	padding:0;
