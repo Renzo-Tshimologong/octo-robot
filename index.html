@@ -1,153 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-	<meta charset="UTF-8">
-	<title>App Factory 2022</title>
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link
-		href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Source+Sans+Pro:ital,wght@0,700;0,900;1,700;1,900&display=swap"
-		rel="stylesheet">
-	<link href="./css/style.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Factory</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
-
 <body>
-	<div class="wrapper">
+    <section class="navbar">
+        <header>
+            <nav class="bar">
+                <img src="img/app factory 2022.png" alt="logo" width="180">
+                <h1>App Factory</h1>
+                <a href="#aboutProgramme">About Programme</a>
+                <!-------------------- drop down buttons ---------------------->                
+                <div class="dropdown">
+                    <button  class="dropbtn">Projects <i class="fa fa-caret-down"></i></button>
+                    <div class="dropdown-content">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                </div> 
+                <div class="dropdown">
+                    <button class="dropbtn">Team <i class="fa fa-caret-down"></i></button>
+                    <div class="dropdown-content">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                </div> 
+                
+                <a href="#brand">Brand</a>
+                <a class="active" href="#">Home</a>
+                
+            </nav>
+        </header>
+    </section>
+<!-----------------------------   Home     -------------------->
+    <section class="Home">
+        <div>
+			<h2 class="welcome">Welcome</h2>
+			<h2 class="to">To The</h2>
+			<h2 class="factory">App Factory</h2>
+			<img src="./img/abstract.svg" class="abstract"/>
+        </div>
+    </section>
+<!-----------------------------   Brand     -------------------->
+    <section id="brand" class="Brand">
+        <div class="inquisitive" >
+            <header>Inquisitive</header>
+            <p>There are many variations of passages of <br>Lorem Ipsum available, but the majority<br> have suffered alteration in some form, <br>by injected humour, or randomised words 
+            <br>which don't look even slightly believable. <br>If you are going to use a passage <br>of Lorem Ipsum, you<br> need to be sure<br>there isn't anything embarrassing<br> hidden in the middle of text.
+        </div>
+        <div class="determination">
+            <header>Determination</header>
+            <p>There are many variations of passages of <br>Lorem Ipsum available, but the majority<br> have suffered alteration in some form, <br>by injected humour, or randomised words 
+                <br><br>If you are going to use a passage <br>of Lorem Ipsum, you<br> need to be sure<br>there isn't anything embarrassing<br> hidden in the middle of text.
+        </div>
+        <div class="optimistic">
+            <header>Optimistic</header>
+            <p>There are many variations of passages of <br>Lorem Ipsum available, but the majority<br> have suffered alteration in some form, <br>by injected humour, or randomised words 
+                <br><br><br> need to be sure<br>there isn't anything embarrassing<br> hidden in the middle of text.
+        </div>
+        
+        <div class="intelligence">
+            <header>Intelligence</header>
+            <p><br> have suffered alteration in some form, <br>by injected humour, or randomised words 
+                <br>which don't look even slightly believable. <br>If you are going to use a passage <br>of Lorem Ipsum, you<br> need to be sure<br>there isn't anything embarrassing<br> hidden in the middle of text.
+        </div>
+        
+        <div>
+            <header>Inquisitive</header>
+            <p>There are many variations of passages of <br>Lorem Ipsum available, but the majority<br> have suffered alteration in some form, <br>by injected humour, or randomised words 
+                <br>which don't look even slightly believable. <br>If you are going to use a passage <br>of Lorem Ipsum, you<br> need to be sure<br>there isn't anything embarrassing<br> hidden in the middle of text.
+        </div>
+    </section>
+<!-----------------------------   About programme     -------------------->
+    <section id="aboutProgramme" class="about">
+        <div class="grid-container">
+            <div>
+                <img src="img/app factory 2022(1).jpg" width="500" alt="">
+            </div>
+            <div class="centerDiv">
 
-		<header>
-			<nav class="myNav">
-				<a href="index.html"><img src="./img/logo 3.svg" alt="thsimologong logo" class="logo" width="500px"/></a>
-				<h1>App Factory</h1>
-				<div class="dropdown">
-					<button onclick="myFunction()" class="dropbtn">Projects</button>
-					<div id="myDropdown" class="dropdown-content">
-					  <a href="#home">Home</a>
-					  <a href="#about">About</a>
-					  <a href="#contact">Contact</a>
-					  <button onclick="myFunction()" class="dropbtn">Projects</button>
-					<div id="myDropdown" class="dropdown-content">
-					  <a href="#home">Home</a>
-					  <a href="#about">About</a>
-					  <a href="#contact">Contact</a>
-					  <button onclick="myFunction()" class="dropbtn">Projects</button>
-					<div id="myDropdown" class="dropdown-content">
-					  <a href="#home">Home</a>
-					  <a href="#about">About</a>
-					  <a href="#contact">Contact</a>
-					</div>
-				  </div>
-				<!-- <ul>
-					<li><a href="index.html">Home</li>
-					<li onclick="myFunction" class="drop"><a href="project.html">Projects</li>
-						<a href="./AlienAbduction/alien.html">Alien</a>
-					<li><a href="team.html">Team</li>
-					<li><a href="about.html">About</li>
-				</ul> -->
+                <h2>What is the App Factory?</h2>
+                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
+                <div class="mid" id="HiddenDiv" style="display: none;">
+                    
+                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
+                </div>
+                <button onclick="javascript:ShowHide('HiddenDiv')">...[Read More]</button>
+            </article>
+            </div>
+            <article>
+        </div>
+    </section>
+    
+<!-----------------------------   space saver     -------------------->
 
-			</nav>
-			<div id ="myContainer">
-            <div><img id="myAnimation"  class="anim" src="./img/animated-header-image.svg" alt="animated blue image" ></div>
-		</div>
-		</header>
+    <section class="imgDiv">
+        <div >
+            <!-- <h3>App Factory 2022</h3>
+            <p>Solution for the cloud in South Africa</p> -->
+            <img src="img/team.jpg" alt="">
+        </div>
+    </section>
+<!-----------------------------   Where to find us     -------------------->
+<section class="grid-container find-us">
+    
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3580.0643230356354!2d28.029706514648574!3d-26.19458576994322!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e950c1b6c0d6957%3A0xfbe0d8fbd0b2ad62!2sTshimologong%20Precinct!5e0!3m2!1sen!2sza!4v1646772662114!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 
-		<section>
+    <div class="cont_info">
+        <i class="material-icons">place</i>
+        <a href="https://goo.gl/maps/GX1MRLpmERnNQfkX8" target="_blank">41 Juta St, Braamfontein, Johannesburg, 2001</a>
+        <br>
+        <i class="material-icons">phone</i>
+        <a href="tel:+27108223530">0108223530</a>
+        <br>
+        <i class="material-icons">email</i>
+        <a href="mailto:community@tshimologong.joburg">community@tshimologong.joburg</a>
+        <br>
+        
+    </div>
 
-			<div class="info">
-				<div class="info1" ><h2>Inquisitive</h2>
-				<p>Long paragraphs for her: It’s the year 2021 and we are happy to see you once again, here we have updated this article with long paragraphs for her copy and paste with emojis, in the last few years, we started gathering the most searched copy and paste long paragraphs for her, here we have updated it with the latest cute long paragraphs for her copy and paste for the year 2021. Some of the copy and paste paragraphs we included now are long goodnight paragraphs for her copy and paste, long love paragraphs for her copy and paste, long cute paragraphs for her to copy and paste.</p></div>
+</section>
+<!-----------------------------   footer     -------------------->    
 
-				<div class="info2"><h2>Determination</h2>
-					<p>Long paragraphs for her: It’s the year 2021 and we are happy to see you once again, here we have updated this article with long paragraphs for her copy and paste with emojis, in the last few years, we started gathering the most searched copy and paste long paragraphs for her, here we have updated it with the latest cute long paragraphs for her copy and paste for the year 2021. Some of the copy and paste paragraphs we included now are long goodnight paragraphs for her copy and paste, long love paragraphs for her copy and paste, long cute paragraphs for her to copy and paste.</p></div>
-
-				<div class="info3"><h2>Optimistic</h2>
-					<p>Long paragraphs for her: It’s the year 2021 and we are happy to see you once again, here we have updated this article with long paragraphs for her copy and paste with emojis, in the last few years, we started gathering the most searched copy and paste long paragraphs for her, here we have updated it with the latest cute long paragraphs for her copy and paste for the year 2021. Some of the copy and paste paragraphs we included now are long goodnight paragraphs for her copy and paste, long love paragraphs for her copy and paste, long cute paragraphs for her to copy and paste.</p></div>
-
-				<div class="info4"><h2>Intelligene</h2>
-					<p>Long paragraphs for her: It’s the year 2021 and we are happy to see you once again, here we have updated this article with long paragraphs for her copy and paste with emojis, in the last few years, we started gathering the most searched copy and paste long paragraphs for her, here we have updated it with the latest cute long paragraphs for her copy and paste for the year 2021. Some of the copy and paste paragraphs we included now are long goodnight paragraphs for her copy and paste, long love paragraphs for her copy and paste, long cute paragraphs for her to copy and paste.</p></div>
-			</div>
-			<div class="whatF">
-				<h2>What is the App Factory</h2>
-				<img src="./img/soft image.jpg" alt="animatted computer image" width="1000px" height="200">
-				<p>Long paragraphs for her: It’s the year 2021 and we are happy to see you once again, here we have updated this article with long paragraphs for her copy and paste with emojis, in the last few years, we started gathering the most searched copy and paste long paragraphs for her, here we have updated it with the latest cute long paragraphs for her copy and paste for the year 2021. Some of the copy and paste paragraphs we included now are long goodnight paragraphs for her copy and paste, long love paragraphs for her copy and paste, long cute paragraphs for her to copy and paste.</p>
-				<button>Contiue Reading</button>
-			</div>
-
-			<!-- <h2>Our Colours</h2>
-
-			<div class="colour-group">
-				<button type="button" class="colour blue"></button>
-				<button type="button" class="colour yellow"></button>
-				<button type="button" class="colour flame"></button>
-				<button type="button" class="colour light-blue"></button>
-
-			</div>
-
-			<h2>Our Typography</h2>
-			<button type="button" class="typography">
-				<h1>Heading 1</h1>
-			</button>
-			<button type="button" class="typography">
-				<h2>Heading 2</h2>
-			</button>
-			<button type="button" class="typography">
-				<h3>Heading 3</h3>
-			</button>
-			<button type="button" class="typography">
-				<p>Paragraph text</p>
-			</button>
-
-			<h2>Our Logos</h2>
-			<img src="./img/AppFactorylogo.png">
-			<img src="./img/AppFactoryLogo.svg">
-			<img src="./img/logo 3.svg">
-
-			<div class="logo-group">
-			<img src="./img/app factory 2022.jpg">
-			<div class="logo-dark">
-				<img src="./img/app factory 2022.png">
-			</div>
-			<img src="./img/app factory 2022(1).jpg">
-			<img src="./img/app factory 2022(2).png">
-			</div>
-
-			<h2>Our People</h2>
-
-			<h2>Our Projects</h2>
-
-			<ul>
-				<li><a href="./ToDoList/todolist.html">To Do List</a></li>
-				<li><a href="./WeatherMap/src/weathermap.html">Weather App </a></li>
-				<li><a href="./SpongeBob/spongebob.html">SpongeBob's Profile</a></li>
-				<li><a href="./AlienAbduction/alien.html"> Alien Abduction</a></li>
-			</ul>
- -->        <div class="bore">
-	 			<h2>App Factory 2022</h2>
-
-	           <img src="./img/BlankMap-World-Microstates.svg" >
-
-            </div>          
-         
-		<aside>
-
-			<h3>Our Location</h3>
-
-			<address>
-				<p>Tshimologong Precinct <br> 41 Juta Street <br> Braamfontein <br> Johannesburg</p> <br>
-				
-			</address>
-
-			<iframe
-				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3580.0643656546868!2d28.029705815351612!3d-26.19458438344202!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e950c1b6a6a1df1%3A0xc45fc4ca472e6a2f!2s41%20Juta%20St%2C%20Braamfontein%2C%20Johannesburg%2C%202000!5e0!3m2!1sen!2sza!4v1642593471384!5m2!1sen!2sza"
-				width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy">
-			</iframe>
-
-		</aside>
-	</div>
-		</section>
-
-
-	<script src="js/main.js"></script>
+<section class="footerSection">
+    <footer>
+        <div>
+            <img src="img/Tshimologong.png" alt="logo" width="100">
+            <i class="material-icons">facebook</i>
+            <i class="material-icons">email</i>
+            <i class="material-icons">phone</i>
+            <i class="material-icons">link</i>
+            <label>copyright K.L Molefe 2022</label>
+            <i class="material-icons">copyright</i>
+        </div>
+    </footer>
+</section>
+<!-----------------------------   script     --------------------> 
+    <script type="text/javascript">// <![CDATA[
+        function ShowHide(divId)
+        {
+            if(document.getElementById(divId).style.display == 'none'){
+                document.getElementById(divId).style.display='block';
+            }
+            else{
+                document.getElementById(divId).style.display = 'none';
+            }
+        }
+        // ]]>
+    </script>
 </body>
-
 </html>
