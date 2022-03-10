@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Righteous&display=swap');
 ::-webkit-scrollbar {
 	width: 0; /* Remove scrollbar space */
 	background: transparent; /* Optional: just make scrollbar invisible */
@@ -22,13 +22,17 @@
 	font-size: 17px;
 	/* z-index: 100; */
 	position: fixed;
+	padding-left: 1rem;
+	padding-bottom: 0.3rem;
   }
   .bar {
 	padding: 1.5rem;
   }
   .navbar a.active {
+	  margin-top: 0;
 	background-color: #ffcc05;
 	color: white;
+	
   }
   /* .navbar img,
   .navbar h1,
@@ -42,6 +46,7 @@
 	margin: 0;
 	padding: 0;
 	margin: -3rem;
+	margin-top: -4rem;
 	margin-right: -4rem;
 	position: absolute;
   }
@@ -77,6 +82,7 @@
   .navbar a:hover,
   .dropdown:hover .dropbtn {
 	background-color: #ffcc05;
+	
   }
   
   .dropdown-content {
@@ -155,6 +161,7 @@
 	  margin-left: 10%;
 	
   }
+
   /* --------- Brand ------------*/
   .Brand {
 	background-color: #ff6b40;
@@ -210,6 +217,7 @@ div.intelligence{
   .grid-container {
 	display: grid;
 	grid-template-columns: auto auto;
+	padding: 1rem;
   }
   
   button {
@@ -224,6 +232,17 @@ div.intelligence{
   .imgDiv img {
 	width: 100%;
   }
+  blockquote{
+	  margin: 0;
+	  padding: 10rem;
+	  background-color: #ffcc05;
+	  text-align: center;
+  }
+  q{
+	  font-family: 'Dancing Script', cursive;
+	  font-size: 2rem;
+	  color: white;
+  }
   
   /* --------- where to find us ------------*/
   iframe {
@@ -231,8 +250,27 @@ div.intelligence{
 	padding: 5rem ;
 	box-shadow: 10px 10px 10px 5px black;
 	border-radius: 1rem;
+	background-color: white;
+	
+  }
+  section.container{
+	  border-top: 2px solid rgb(233, 233, 233);
+	  padding-top: 1rem;
+	  background-color: rgb(233, 233, 233);
+	  padding: 1px;
+  }
+  section.container h2{
+	  text-align: center;
+	  font-size: 2rem;
+	  font-family: sans-serif;
   }
   
+section.grid-container a {
+	font-family: 'Dancing Script', cursive;
+	font-size: 2rem;
+	text-shadow: -0.5px 1px 1px rgba(0, 0, 0, 0.5); 
+
+}
   .cont_info {
 	padding: 10rem 4rem 0 0;
 	font-size: 25px;
