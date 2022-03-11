@@ -1,38 +1,428 @@
+::-webkit-scrollbar {
+  width: 0; /* Remove scrollbar space */
+  background: transparent; /* Optional: just make scrollbar invisible */
+}
+::-webkit-scrollbar-thumb {
+  background: #274c77;
+  border-radius: 10px;
+}
+/*-------------- backgroung animation ----------------*/
+@import url("https://fonts.googleapis.com/css?family=Exo:400,700");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  /* color: greenyellow; */
+}
 body {
-	font-family: sans-serif;
-	margin: 0 auto;
-  }
-  
-  .navbar {
-	background-color: #0b2343;
-	margin: 0;
-	height: 4.5rem;
-	width: 100%;
-	font-size: 17px;
-	position: fixed;
+  /* font-family: "Exo", sans-serif; */
+  font-family: sans-serif;
+  /* background-color: #0b2343; */
+}
+/*--------------------- body --------------------*/
+
+.navbar {
+  background-color: inherit;
+  font-size: 17px;
+  position: fixed;
+}
+
+nav img {
+  float: left;
+  background-color: inherit;
+  margin: 0;
+  padding: 0;
+  margin: -3rem;
+  margin-right: -4rem;
+  position: absolute;
+  /* overflow: hidden; */
+}
+h1 {
+  float: left;
+  color: white;
+  padding: 0 0 0 5rem;
+  margin: 1.5rem;
+  font-size: 25px;
+  margin-left: 3rem;
 }
 .bar {
-    padding: 0 0 0 5rem;
-    overflow: hidden;
+  padding: 0 0 0 5rem;
+  overflow: hidden;
+}
+.context {
+  width: 100%;
+  position: absolute;
+  top: 0vh;
+}
+/* .context h1 {
+  text-align: center;
+  color: #fff;
+  font-size: 50px;
+} */
+
+.area {
+  background: #0b2343;
+  background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);
+  width: 100%;
+  height: 100vh;
+}
+.circles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.circles li {
+  position: absolute;
+  display: block;
+  list-style: none;
+  width: 20px;
+  height: 20px;
+
+  background-color: #ffcc05;
+  animation: animate 25s linear infinite;
+  bottom: -150px;
+}
+.circles li:nth-child(1) {
+  left: 25%;
+  width: 80px;
+  height: 80px;
+  animation-delay: 0s;
+  background-color: #ff6b40;
+}
+.circles li:nth-child(2) {
+  left: 10%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 2s;
+  animation-duration: 12s;
+  background-color: white;
+}
+.circles li:nth-child(3) {
+  left: 70%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 4s;
+  background-color: #ffcc05;
+}
+.circles li:nth-child(4) {
+  left: 40%;
+  width: 60px;
+  height: 60px;
+  animation-delay: 0s;
+  animation-duration: 18s;
+  background-color: #00bae4;
+}
+.circles li:nth-child(5) {
+  left: 65%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 0s;
+  background-color: #ff6b40;
+}
+.circles li:nth-child(6) {
+  left: 75%;
+  width: 110px;
+  height: 110px;
+  animation-delay: 3s;
+  background-color: #ffcc05;
+}
+.circles li:nth-child(7) {
+  left: 35%;
+  width: 150px;
+  height: 150px;
+  animation-delay: 7s;
+  background-color: white;
+}
+.circles li:nth-child(8) {
+  left: 50%;
+  width: 25px;
+  height: 25px;
+  animation-delay: 15s;
+  animation-duration: 45s;
+  background-color: #ffcc05;
+}
+.circles li:nth-child(9) {
+  left: 20%;
+  width: 15px;
+  height: 15px;
+  animation-delay: 2s;
+  animation-duration: 35s;
+  background-color: #ff6b40;
+}
+.circles li:nth-child(10) {
+  left: 85%;
+  width: 150px;
+  height: 150px;
+  animation-delay: 0s;
+  animation-duration: 11s;
+  background-color: #00bae4;
+}
+@keyframes animate {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+    border-radius: 0;
   }
 
-  nav img {
-	float: left;
-	background-color: inherit;
-	margin: 0;
-	padding: 0;
-	margin: -3rem;
-	margin-right: -4rem;
-	position: absolute;
+  100% {
+    transform: translateY(-1000px) rotate(720deg);
+    opacity: 0;
+    border-radius: 50%;
   }
-  
+}
 
-  h1 {
-	float: left;
-	color: white;
-	padding: 0 0 0 5rem;
-	margin: 1.5rem;
-	font-size: 25px;
-	margin-left: 3rem;
+/* --------- Home ------------*/
+
+/*------------------ Navigation bar animation ---------------*/
+@keyframes plummit {
+  from {
+    opacity: 1;
+    transform: scale(10);
   }
-  /* --------- Home ------------*/
+
+  to {
+    opacity: 1;
+    transform: scale(0);
+  }
+}
+
+.plummit {
+  animation-timing-function: ease-in-out;
+  animation-name: plummit;
+  animation-duration: 5s;
+}
+/*--------------- h2 style and animaiton-----------------*/
+h2 {
+  text-align: center;
+  font-size: 150px;
+  margin: 5rem 0rem 0 0;
+  color: #00bae4;
+}
+.css-typing h2 {
+  /*   border-right: .15em solid orange; */
+  font-family: "Courier";
+  /* font-size: 14px; */
+  white-space: nowrap;
+  overflow: hidden;
+}
+.css-typing h2 {
+  position: relative;
+  width: 7.3em;
+  -webkit-animation: type 5s steps(40, end);
+  animation: type 5s steps(40, end);
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+@keyframes type {
+  0% {
+    width: 0;
+  }
+  99.9% {
+    border-right: 0.15em solid orange;
+  }
+  100% {
+    border: none;
+  }
+}
+
+@-webkit-keyframes type {
+  0% {
+    width: 0;
+  }
+  99.9% {
+    border-right: 0.15em solid orange;
+  }
+  100% {
+    border: none;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+@-webkit-keyframes blink {
+  50% {
+    border-color: tranparent;
+  }
+}
+
+/*------------about the Dec Crew ------------------*/
+h3 {
+  margin-top: -3rem;
+  padding: 2.5rem 0;
+  font-size: 30px;
+}
+.about {
+  background-color: inherit;
+  color: white;
+  /* border: solid 3px red; */
+  margin: 0 5rem 0 20rem;
+  padding: 2rem;
+  border-radius: 10px;
+  opacity: 80%;
+  /* padding-bottom: 10rem; */
+}
+label {
+  font-weight: bold;
+  font-size: 20px;
+}
+.slide {
+  display: flex;
+  overflow: auto;
+  white-space: nowrap;
+  margin: -1rem 0 -1.5rem 0;
+}
+.slide div {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1rem 1rem;
+  margin: 0 0.1rem;
+  border-radius: 10px;
+}
+div.person1 {
+  background-color: #0466c8;
+  color: white;
+}
+div.person2 {
+  background-color: #ffcc05;
+  color: white;
+}
+div.person3 {
+  background-color: #ff6b40;
+  color: white;
+}
+div.person4 {
+  background-color: #00bae4;
+  color: white;
+}
+div.person5 {
+  background-color: #ffcc05;
+  color: white;
+}
+div.person6 {
+  background-color: #0b2343;
+  color: white;
+}
+
+/*-------------------about the Dec Crew animation -----------------*/
+
+.up-down {
+  animation: up-down linear 7s;
+  animation-iteration-count: infinite;
+  transform-origin: 50% 50%;
+  -webkit-animation: up-down linear 7s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-transform-origin: 50% 50%;
+  -moz-animation: up-down linear 7s;
+  -moz-animation-iteration-count: infinite;
+  -moz-transform-origin: 50% 50%;
+  -o-animation: up-down linear 7s;
+  -o-animation-iteration-count: infinite;
+  -o-transform-origin: 50% 50%;
+  -ms-animation: up-down linear 7s;
+  -ms-animation-iteration-count: infinite;
+  -ms-transform-origin: 50% 50%;
+}
+
+@keyframes up-down {
+  0% {
+    transform: translate(1px, 20px);
+  }
+  24% {
+    transform: translate(1px, 30px);
+  }
+  50% {
+    transform: translate(1px, 12px);
+  }
+  74% {
+    transform: translate(1px, 22px);
+  }
+  100% {
+    transform: translate(1px, 22px);
+  }
+}
+
+@-moz-keyframes up-down {
+  0% {
+    -moz-transform: translate(1px, 20px);
+  }
+  24% {
+    -moz-transform: translate(1px, 30px);
+  }
+  50% {
+    -moz-transform: translate(1px, 12px);
+  }
+  74% {
+    -moz-transform: translate(1px, 22px);
+  }
+  100% {
+    -moz-transform: translate(1px, 22px);
+  }
+}
+
+@-webkit-keyframes up-down {
+  0% {
+    -webkit-transform: translate(1px, 20px);
+  }
+  24% {
+    -webkit-transform: translate(1px, 30px);
+  }
+  50% {
+    -webkit-transform: translate(1px, 12px);
+  }
+  74% {
+    -webkit-transform: translate(1px, 22px);
+  }
+  100% {
+    -webkit-transform: translate(1px, 22px);
+  }
+}
+
+@-o-keyframes up-down {
+  0% {
+    -o-transform: translate(1px, 20px);
+  }
+  24% {
+    -o-transform: translate(1px, 30px);
+  }
+  50% {
+    -o-transform: translate(1px, 12px);
+  }
+  74% {
+    -o-transform: translate(1px, 22px);
+  }
+  100% {
+    -o-transform: translate(1px, 22px);
+  }
+}
+
+@-ms-keyframes up-down {
+  0% {
+    -ms-transform: translate(1px, 20px);
+  }
+  24% {
+    -ms-transform: translate(1px, 30px);
+  }
+  50% {
+    -ms-transform: translate(1px, 12px);
+  }
+  74% {
+    -ms-transform: translate(1px, 22px);
+  }
+  100% {
+    -ms-transform: translate(1px, 22px);
+  }
+}
+
+/*
+  #0B2343 - Oxford Blue
+  #ffcc05 - Sunglow
+  #FF6B40 - Outrageous Orange
+  #00BAE4 - Cyan Process*/
