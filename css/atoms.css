@@ -193,6 +193,12 @@ h2 {
   font-size: 50px;
   padding: 5rem 0 0 0;
   float: left;
+  animation-name: example1;
+  animation-duration: 4s;
+}
+@keyframes example1 {
+  0%   {padding: 15rem}
+  100%  {padding: 5rem 0 0 0;}
 }
 h3 {
   margin-top: -3rem;
@@ -202,11 +208,15 @@ h3 {
 .about {
   background-color: #0b2343;
   color: white;
-  /* border: solid 3px red; */
   margin: -13rem 5rem 0 40rem;
   padding: 2rem;
   border-radius: 10px;
-  /* padding-bottom: 10rem; */
+  animation-name: example2;
+  animation-duration: 4s;
+}
+@keyframes example2 {
+  0%   {padding: 25rem;}
+  100%  {padding: 2rem;}
 }
 label {
   font-weight: bold;
@@ -249,6 +259,32 @@ div.person5 {
 div.person6 {
   background-color: #023e8a;
   color: white;
+}
+/*------------- button -------------------------*/
+.btnAnimation{
+  background-color: #0096c7;
+  text-align: center;
+  width: 110px;
+  height: 40px;
+  border-radius: 10px;
+  margin: -4.2rem 0 0 5rem;
+}
+a{
+  /* border: 1px solid red; */
+  margin: 0 0 0 5rem;
+  padding: 1rem;
+  color: white;
+  font-size: 25px;
+  border-radius: 10px;
+  background-color: #023e8a;
+  text-decoration: none;
+  animation-name: example3;
+  animation-duration: 4s;
+}
+@keyframes example3 {
+  0%   {padding: 5rem;}
+  100%  {padding: 1rem;}
+
 }
 /*
   #0B2343 - Oxford Blue

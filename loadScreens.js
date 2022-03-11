@@ -1,149 +1,149 @@
 const body = document.querySelector("body")
-
+//--------------------------------- Atom load screen ------------------------
 function loadAtom(){
     const atomLoad =
     `
     <style>
-    body{
-        width: 100%;
-        margin: 0;
-        background-color: #000000;
-    }
-    .container {
-        width: 200px;
-        height: 100px;
-        padding-top: 5rem;
-        margin: 0 auto;
-      }
-      
-      .ball {
-        width: 10px;
-        height: 10px;
-        margin: 10px auto;
-        border-radius: 50px;
-      }
-      
-      .ball:nth-child(1) {
-        background: red;
-        -webkit-animation: right 2s infinite ease-in-out;
-        -moz-animation: right 2s infinite ease-in-out;
-        animation: right 2s infinite ease-in-out;
-      }
-      
-      .ball:nth-child(2) {
-        background: blue;
-        -webkit-animation: left 1.5s infinite ease-in-out;
-        -moz-animation: left 1.5s infinite ease-in-out;
-        animation: left 1.5s infinite ease-in-out;
-      }
-      
-      .ball:nth-child(3) {
-        background: greenyellow;
-        -webkit-animation: right 1.5s infinite ease-in-out;
-        -moz-animation: right 1.5s infinite ease-in-out;
-        animation: right 1.5s infinite ease-in-out;
-      }
-      
-      .ball:nth-child(4) {
-        background: red;
-        -webkit-animation: left 2s infinite ease-in-out;
-        -moz-animation: left 2s infinite ease-in-out;
-        animation: left 2s infinite ease-in-out;
-      }
-      
-      .ball:nth-child(5) {
-        background: blue;
-        -webkit-animation: right 1.5s infinite ease-in-out;
-        -moz-animation: right 1.5s infinite ease-in-out;
-        animation: right 1.5s infinite ease-in-out;
-      }
-      
-      .ball:nth-child(6) {
-        background: greenyellow;
-        -webkit-animation: left 3s infinite ease-in-out;
-        -moz-animation: left 3s infinite ease-in-out;
-        animation: left 3s infinite ease-in-out;
-      }
-      
-      .ball:nth-child(7) {
-        background: red;
-        -webkit-animation: right 1s infinite ease-in-out;
-        -moz-animation: right 1s infinite ease-in-out;
-        animation: right 1s infinite ease-in-out;
-      }
-      
-      @-webkit-keyframes right {
-        0% {
-          -webkit-transform: translate(-15px);
+        body{
+            width: 100%;
+            margin: 0;
+            background-color: #000000;
         }
-        50% {
-          -webkit-transform: translate(15px);
-        }
-        100% {
-          -webkit-transform: translate(-15px);
-        }
-      }
-      
-      @-webkit-keyframes left {
-        0% {
-          -webkit-transform: translate(15px);
-        }
-        50% {
-          -webkit-transform: translate(-15px);
-        }
-        100% {
-          -webkit-transform: translate(15px);
-        }
-      }
-      
-      @-moz-keyframes right {
-        0% {
-          -moz-transform: translate(-15px);
-        }
-        50% {
-          -moz-transform: translate(15px);
-        }
-        100% {
-          -moz-transform: translate(-15px);
-        }
-      }
-      
-      @-moz-keyframes left {
-        0% {
-          -moz-transform: translate(15px);
-        }
-        50% {
-          -moz-transform: translate(-15px);
-        }
-        100% {
-          -moz-transform: translate(15px);
-        }
-      }
-      
-      @keyframes right {
-        0% {
-          transform: translate(-15px);
-        }
-        50% {
-          transform: translate(15px);
-        }
-        100% {
-          transform: translate(-15px);
-        }
-      }
-      
-      @keyframes left {
-        0% {
-          transform: translate(15px);
-        }
-        50% {
-          transform: translate(-15px);
-        }
-        100% {
-          transform: translate(15px);
-        }
-      }
-    </style>
+        .container {
+            width: 200px;
+            height: 100px;
+            padding-top: 5rem;
+            margin: 0 auto;
+          }
+          
+          .ball {
+            width: 80px;
+            height: 80px;
+            margin: 10px auto;
+            border-radius: 50px;
+          }
+          
+          .ball:nth-child(1) {
+            background: red;
+            -webkit-animation: right 2s infinite ease-in-out;
+            -moz-animation: right 2s infinite ease-in-out;
+            animation: right 2s infinite ease-in-out;
+          }
+          
+          .ball:nth-child(2) {
+            background: blue;
+            -webkit-animation: left 1.5s infinite ease-in-out;
+            -moz-animation: left 1.5s infinite ease-in-out;
+            animation: left 1.5s infinite ease-in-out;
+          }
+          
+          .ball:nth-child(3) {
+            background: greenyellow;
+            -webkit-animation: right 1.5s infinite ease-in-out;
+            -moz-animation: right 1.5s infinite ease-in-out;
+            animation: right 1.5s infinite ease-in-out;
+          }
+          
+          .ball:nth-child(4) {
+            background: red;
+            -webkit-animation: left 2s infinite ease-in-out;
+            -moz-animation: left 2s infinite ease-in-out;
+            animation: left 2s infinite ease-in-out;
+          }
+          
+          .ball:nth-child(5) {
+            background: blue;
+            -webkit-animation: right 1.5s infinite ease-in-out;
+            -moz-animation: right 1.5s infinite ease-in-out;
+            animation: right 1.5s infinite ease-in-out;
+          }
+          
+          .ball:nth-child(6) {
+            background: greenyellow;
+            -webkit-animation: left 3s infinite ease-in-out;
+            -moz-animation: left 3s infinite ease-in-out;
+            animation: left 3s infinite ease-in-out;
+          }
+          
+          .ball:nth-child(7) {
+            background: red;
+            -webkit-animation: right 1s infinite ease-in-out;
+            -moz-animation: right 1s infinite ease-in-out;
+            animation: right 1s infinite ease-in-out;
+          }
+          
+          @-webkit-keyframes right {
+            0% {
+              -webkit-transform: translate(-60px);
+            }
+            50% {
+              -webkit-transform: translate(100px);
+            }
+            100% {
+              -webkit-transform: translate(-60px);
+            }
+          }
+          
+          @-webkit-keyframes left {
+            0% {
+              -webkit-transform: translate(100px);
+            }
+            50% {
+              -webkit-transform: translate(-60px);
+            }
+            100% {
+              -webkit-transform: translate(100px);
+            }
+          }
+          
+          @-moz-keyframes right {
+            0% {
+              -moz-transform: translate(-60px);
+            }
+            50% {
+              -moz-transform: translate(100px);
+            }
+            100% {
+              -moz-transform: translate(-60px);
+            }
+          }
+          
+          @-moz-keyframes left {
+            0% {
+              -moz-transform: translate(100px);
+            }
+            50% {
+              -moz-transform: translate(-60px);
+            }
+            100% {
+              -moz-transform: translate(100px);
+            }
+          }
+          
+          @keyframes right {
+            0% {
+              transform: translate(-60px);
+            }
+            50% {
+              transform: translate(100px);
+            }
+            100% {
+              transform: translate(-60px);
+            }
+          }
+          
+          @keyframes left {
+            0% {
+              transform: translate(100px);
+            }
+            50% {
+              transform: translate(-60px);
+            }
+            100% {
+              transform: translate(100px);
+            }
+          }
+        </style>
 
     <div class="container">
         <div class="ball"></div>
@@ -161,12 +161,14 @@ function loadAtom(){
         window.location = 'atoms.html'; }, 3500);
 }
 
+
+//--------------------------- Dev Crew load screen --------------------------------------
 function loadDevCrew(){
   const devLoad =
   `
   <style>
       body{
-          background-color: #1E0731;
+          background-color: #0b2343;
       }
       footer{
           position: absolute;
@@ -178,13 +180,11 @@ function loadDevCrew(){
       footer img{
           width: 32px;
           height: 32px;
-          vertical-align: middle;
       }
 
       .wrapper{
           position: absolute;
-          float: left;
-          margin: 140px 100px;
+          margin: 25% 40%;
       }
 
       .line{
