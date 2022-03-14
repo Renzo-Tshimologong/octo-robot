@@ -1,0 +1,293 @@
+::-webkit-scrollbar {
+  width: 0; /* Remove scrollbar space */
+  background: transparent; /* Optional: just make scrollbar invisible */
+}
+::-webkit-scrollbar-thumb {
+  background: #274c77;
+  border-radius: 10px;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: #355070;
+}
+/* ------------ nav bar ------------------*/
+.navbar {
+  /* background-color: inherit; */
+  margin: 0;
+  background: #000000;
+  width: 100%;
+  font-size: 17px;
+  position: fixed;
+}
+.bar {
+  padding: 0 0 0 5rem;
+  overflow: hidden;
+}
+
+nav img {
+  float: left;
+  background-color: #000000;
+  margin: 0;
+  padding: 0;
+  margin: -3rem;
+  margin-right: -4rem;
+  position: absolute;
+}
+
+h1 {
+  float: left;
+  color: white;
+  padding: 0 0 0 8rem;
+  margin: 1.5rem;
+  font-size: 25px;
+  margin-left: 3rem;
+}
+/*------------ h2 ---------------*/
+.homeSection {
+  background-color: #000000;
+  padding: 5rem 0 5rem 0;
+  overflow: hidden;
+  /* margin: 100rem; */
+}
+.container {
+  float: left;
+  width: 200px;
+  height: 100px;
+  padding-top: 5rem;
+  margin: 0 auto;
+  background-color: #000000;
+}
+
+.ball {
+  width: 10px;
+  height: 10px;
+  margin: 10px auto;
+  border-radius: 50px;
+}
+
+.ball:nth-child(1) {
+  background: red;
+  -webkit-animation: right 2s infinite ease-in-out;
+  -moz-animation: right 2s infinite ease-in-out;
+  animation: right 2s infinite ease-in-out;
+}
+
+.ball:nth-child(2) {
+  background: blue;
+  -webkit-animation: left 1.5s infinite ease-in-out;
+  -moz-animation: left 1.5s infinite ease-in-out;
+  animation: left 1.5s infinite ease-in-out;
+}
+
+.ball:nth-child(3) {
+  background: greenyellow;
+  -webkit-animation: right 1.5s infinite ease-in-out;
+  -moz-animation: right 1.5s infinite ease-in-out;
+  animation: right 1.5s infinite ease-in-out;
+}
+
+.ball:nth-child(4) {
+  background: red;
+  -webkit-animation: left 2s infinite ease-in-out;
+  -moz-animation: left 2s infinite ease-in-out;
+  animation: left 2s infinite ease-in-out;
+}
+
+.ball:nth-child(5) {
+  background: blue;
+  -webkit-animation: right 1.5s infinite ease-in-out;
+  -moz-animation: right 1.5s infinite ease-in-out;
+  animation: right 1.5s infinite ease-in-out;
+}
+
+.ball:nth-child(6) {
+  background: greenyellow;
+  -webkit-animation: left 3s infinite ease-in-out;
+  -moz-animation: left 3s infinite ease-in-out;
+  animation: left 3s infinite ease-in-out;
+}
+
+.ball:nth-child(7) {
+  background: red;
+  -webkit-animation: right 1s infinite ease-in-out;
+  -moz-animation: right 1s infinite ease-in-out;
+  animation: right 1s infinite ease-in-out;
+}
+
+@-webkit-keyframes right {
+  0% {
+    -webkit-transform: translate(-15px);
+  }
+  50% {
+    -webkit-transform: translate(15px);
+  }
+  100% {
+    -webkit-transform: translate(-15px);
+  }
+}
+
+@-webkit-keyframes left {
+  0% {
+    -webkit-transform: translate(15px);
+  }
+  50% {
+    -webkit-transform: translate(-15px);
+  }
+  100% {
+    -webkit-transform: translate(15px);
+  }
+}
+
+@-moz-keyframes right {
+  0% {
+    -moz-transform: translate(-15px);
+  }
+  50% {
+    -moz-transform: translate(15px);
+  }
+  100% {
+    -moz-transform: translate(-15px);
+  }
+}
+
+@-moz-keyframes left {
+  0% {
+    -moz-transform: translate(15px);
+  }
+  50% {
+    -moz-transform: translate(-15px);
+  }
+  100% {
+    -moz-transform: translate(15px);
+  }
+}
+
+@keyframes right {
+  0% {
+    transform: translate(-15px);
+  }
+  50% {
+    transform: translate(15px);
+  }
+  100% {
+    transform: translate(-15px);
+  }
+}
+
+@keyframes left {
+  0% {
+    transform: translate(15px);
+  }
+  50% {
+    transform: translate(-15px);
+  }
+  100% {
+    transform: translate(15px);
+  }
+}
+
+h2 {
+  color: white;
+  font-size: 50px;
+  padding: 5rem 0 0 0;
+  float: left;
+  animation-name: example1;
+  animation-duration: 4s;
+}
+@keyframes example1 {
+  0%   {padding: 15rem}
+  100%  {padding: 5rem 0 0 0;}
+}
+h3 {
+  margin-top: -3rem;
+  padding: 2.5rem 0;
+  font-size: 30px;
+}
+.about {
+  background-color: #0b2343;
+  color: white;
+  margin: -13rem 5rem 0 40rem;
+  padding: 2rem;
+  border-radius: 10px;
+  animation-name: example2;
+  animation-duration: 4s;
+}
+@keyframes example2 {
+  0%   {padding: 25rem;}
+  100%  {padding: 2rem;}
+}
+label {
+  font-weight: bold;
+  font-size: 20px;
+}
+.slide {
+  display: flex;
+  overflow: auto;
+  white-space: nowrap;
+  margin: -1rem 0 -1.5rem 0;
+}
+.slide div {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1rem 1rem;
+  margin: 0 0.1rem;
+  border-radius: 10px;
+}
+div.person1 {
+  background-color: #0466c8;
+  color: white;
+}
+div.person2 {
+  background-color: #0353a4;
+  color: white;
+}
+div.person3 {
+  background-color: #023e7d;
+  color: white;
+}
+div.person4 {
+  background-color: #002855;
+  color: white;
+}
+div.person5 {
+  background-color: #0096c7;
+  color: white;
+}
+div.person6 {
+  background-color: #023e8a;
+  color: white;
+}
+/*------------- button -------------------------*/
+.btnAnimation{
+  background-color: #0096c7;
+  text-align: center;
+  width: 110px;
+  height: 40px;
+  border-radius: 10px;
+  margin: -4.2rem 0 0 5rem;
+}
+a{
+  /* border: 1px solid red; */
+  margin: 0 0 0 5rem;
+  padding: 1rem;
+  color: white;
+  font-size: 25px;
+  border-radius: 10px;
+  background-color: #023e8a;
+  text-decoration: none;
+  animation-name: example3;
+  animation-duration: 4s;
+}
+@keyframes example3 {
+  0%   {padding: 5rem;}
+  100%  {padding: 1rem;}
+
+}
+/*
+  #0B2343 - Oxford Blue
+  #ffcc05 - Sunglow
+  #FF6B40 - Outrageous Orange
+  #00BAE4 - Cyan Process*/
