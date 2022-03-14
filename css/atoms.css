@@ -197,8 +197,12 @@ h2 {
   animation-duration: 4s;
 }
 @keyframes example1 {
-  0%   {padding: 15rem}
-  100%  {padding: 5rem 0 0 0;}
+  0% {
+    padding: 15rem;
+  }
+  100% {
+    padding: 5rem 0 0 0;
+  }
 }
 h3 {
   margin-top: -3rem;
@@ -215,8 +219,12 @@ h3 {
   animation-duration: 4s;
 }
 @keyframes example2 {
-  0%   {padding: 25rem;}
-  100%  {padding: 2rem;}
+  0% {
+    padding: 25rem;
+  }
+  100% {
+    padding: 2rem;
+  }
 }
 label {
   font-weight: bold;
@@ -261,7 +269,7 @@ div.person6 {
   color: white;
 }
 /*------------- button -------------------------*/
-.btnAnimation{
+.btnAnimation {
   background-color: #0096c7;
   text-align: center;
   width: 110px;
@@ -269,8 +277,7 @@ div.person6 {
   border-radius: 10px;
   margin: -4.2rem 0 0 5rem;
 }
-a{
-  /* border: 1px solid red; */
+a {
   margin: 0 0 0 5rem;
   padding: 1rem;
   color: white;
@@ -278,13 +285,20 @@ a{
   border-radius: 10px;
   background-color: #023e8a;
   text-decoration: none;
-  animation-name: example3;
+  /* animation-name: example3; */
   animation-duration: 4s;
 }
+a:hover {
+  padding: 1.2rem;
+  background-color: #0096c7;
+}
 @keyframes example3 {
-  0%   {padding: 5rem;}
-  100%  {padding: 1rem;}
-
+  0% {
+    padding: 5rem;
+  }
+  100% {
+    padding: 1rem;
+  }
 }
 /*
   #0B2343 - Oxford Blue
