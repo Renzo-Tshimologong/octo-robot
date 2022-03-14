@@ -25,6 +25,7 @@ body {
   background-color: inherit;
   font-size: 17px;
   position: fixed;
+  
 }
 
 nav img {
@@ -47,7 +48,7 @@ h1 {
 }
 .bar {
   padding: 0 0 0 5rem;
-  overflow: hidden;
+  overflow: hidden; 
 }
 .context {
   width: 100%;

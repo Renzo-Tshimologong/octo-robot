@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Megrim&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    padding: 5rem;
+    display: flex;
+    background-color: #002343;
+    height: 15rem;
+    text-align: center;
+    align-items: center;
+    background-image: url(./tech.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+
+}
+.tech{
+    width: 100rem;
+    height: 15rem;
+}
+img.techie1, .techie2, .techie3, .techie4{
+    width: 10%;
+    position: absolute;
+}
+img.techie1{
+    margin-top: -4rem;
+    margin-left: 25%;
+}
+img.techie2{
+    margin-left: 20%;
+}
+img.techie3{
+    margin-left: 80%;
+}
+img.techie4{
+    margin-left: 27%;
+    width: 40%;
+    animation: rotation 8s infinite linear;
+    text-shadow: 5px 10px 10px white;
+    
+}
+h1{
+    color: white;
+    text-align: center;
+    margin-left: 39.5%;
+    position: absolute;
+    text-shadow: 5px 10px 10px white;
+    font-family: 'Megrim', cursive;
+    font-weight: bold;
+}
+section.container{
+    border: 1px solid #56A2C1;
+    background-color: #56A2C1;
+    width: 70%;
+    min-height: 30rem;
+    position: absolute;
+    margin-top: -2rem;
+    border-radius: 0.5rem;
+    margin-left: 20%;
+    margin-bottom: 10rem;
+}
+.tech{
+    width: 40%;
+}
+section.memberLeft{
+    margin: 1rem;
+    background-color: #002343;
+    border-radius: 0.5rem;
+    padding-bottom: 0.5rem;
+    box-shadow: 5px 5px 5px white;
+}
+section.memberLeft h3{
+    margin-left: 32.5%;
+    color: white;
+    font-family: 'Megrim', cursive;
+    padding-top: 0.5rem;
+}
+section.memberLeft section{
+    display: flex;
+    padding: 0.5rem;
+    
+}
+section.memberLeft section img{
+    border: 1px solid white;
+    width: 30%;
+    background-color: white;
+    border-radius: 0.5rem;
+}
+section.memberLeft section p{
+    width: 80%;
+    margin: 1rem;
+    color: white;
+    font-family: sans-serif;
+}
+@keyframes rotation {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
