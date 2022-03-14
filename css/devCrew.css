@@ -17,7 +17,8 @@
 body {
   /* font-family: "Exo", sans-serif; */
   font-family: sans-serif;
-  /* background-color: #0b2343; */
+  /* height: 100vh;
+  width: 100vw; */
 }
 /*--------------------- body --------------------*/
 
@@ -64,7 +65,7 @@ h1 {
 .area {
   background: #0b2343;
   background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);
-  width: 100%;
+  width: 100vw;
   height: 100vh;
 }
 .circles {
@@ -422,6 +423,24 @@ div.person6 {
   }
 }
 
+/*--------- home button -------------*/
+a {
+  margin: 0 0 0 5rem;
+  padding: 1rem;
+  color: white;
+  font-size: 25px;
+  border-radius: 10px;
+  background-color: #023e8a;
+  text-decoration: none;
+  animation-name: home;
+  animation-duration: 4s;
+  opacity: 90%;
+}
+@keyframes home {
+  0% {
+    margin-left: 100%;
+  }
+}
 /*
   #0B2343 - Oxford Blue
   #ffcc05 - Sunglow
