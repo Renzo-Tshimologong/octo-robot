@@ -22,6 +22,22 @@
 		width: 100%;
 		background-color: #0b2343;
 		color: white;
+		height: 3.5rem;
+		color: white;
+	}
+	.nav a{
+		color: white
+	}
+	.nav div a:focus{
+		background-color: #ffcc05;
+		color: white;
+	}
+	.nav div a:hover{
+		background-color: #0b2343;
+		color: white;
+	}
+	.drop{
+		background-color: #ffcc05;
 	}
 	img.logo{
 		width: 13%;
