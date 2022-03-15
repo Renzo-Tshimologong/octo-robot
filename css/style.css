@@ -82,6 +82,7 @@
   .navbar a:hover,
   .dropdown:hover .dropbtn {
 	background-color: #ffcc05;
+	border-radius: 0.1rem;
 	
 	
   }
@@ -243,6 +244,7 @@ div.brand{
 	background-color: #ffcc05;
 	border: none;
 	border-bottom: 4px solid #0b2343;
+	border-radius: 0.2rem;
   }
   button.hidden{
 	  cursor: pointer;
