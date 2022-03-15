@@ -1,13 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Megrim&display=swap');
+
+/************************************************Default Style**************************************************** */
 *{
     margin: 0;
     padding: 0;
 }
+/************************************************Default Style**************************************************** */
+
+/* *********************************************Header ********************************************************* */
 header{
     padding: 5rem;
     display: flex;
     background-color: #002343;
-    height: 15rem;
+    height: 18rem;
     text-align: center;
     align-items: center;
     background-image: url(./tech.gif);
@@ -16,14 +21,17 @@ header{
 
 
 }
-.tech{
-    width: 100rem;
-    height: 15rem;
-}
+/* *********************************************Header End ********************************************************* */
+
+
+/* *******************************************Universal Image Styling************************************************** */
 img.techie1, .techie2, .techie3, .techie4{
     width: 10%;
     position: absolute;
 }
+/* ******************************************* End Universal Image Styling************************************************** */
+
+/* **************************************************Separate Image Styling Section********************************************** */
 img.techie1{
     margin-top: -4rem;
     margin-left: 25%;
@@ -35,12 +43,15 @@ img.techie3{
     margin-left: 80%;
 }
 img.techie4{
-    margin-left: 27%;
+    margin-left: 25.5%;
     width: 40%;
     animation: rotation 8s infinite linear;
     text-shadow: 5px 10px 10px white;
     
 }
+/* ************************************************** End Separate Image Styling Section********************************************** */
+
+/* ****************************************Main Heading Styling************************************************************************ */
 h1{
     color: white;
     text-align: center;
@@ -50,13 +61,16 @@ h1{
     font-family: 'Megrim', cursive;
     font-weight: bold;
 }
+/* **************************************** End Main Heading Styling************************************************************************ */
+
+/* ********************************************* Container Styling************************************************************************* */
 section.container{
     border: 1px solid #56A2C1;
     background-color: #56A2C1;
     width: 70%;
     min-height: 30rem;
     position: absolute;
-    margin-top: -2rem;
+    margin-top: -1.3rem;
     border-radius: 0.5rem;
     margin-left: 20%;
     margin-bottom: 10rem;
@@ -94,6 +108,9 @@ section.memberLeft section p{
     color: white;
     font-family: sans-serif;
 }
+/* *********************************************End Container Styling************************************************************************* */
+
+/* **************************************************Animation*********************************************************************** */
 @keyframes rotation {
     from{
         transform: rotate(0deg);
@@ -102,3 +119,4 @@ section.memberLeft section p{
         transform: rotate(360deg);
     }
 }
+/* **************************************************End Animation*********************************************************************** */
