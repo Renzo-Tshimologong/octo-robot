@@ -182,6 +182,12 @@
   .Brand p {
 	word-break: break-all;
   }
+div h3{
+	color: white;
+}
+div h3 p{
+	color: white;
+}
   
 div.inquisitive{
 	  background-color: #B29704;
@@ -197,6 +203,10 @@ div.optimistic{
 }
 div.intelligence{
 	background-color: #0b2343;
+	color: white;
+}
+div.brand{
+	background-color: #ff6b40;
 	color: white;
 }
   /* --------- about program ------------*/
@@ -227,6 +237,13 @@ div.intelligence{
 	background-color: #ffcc05;
 	border: none;
 	border-bottom: 4px solid #0b2343;
+  }
+  button.hidden{
+	  cursor: pointer;
+  }
+
+  button.hidden:hover{
+	  background-color: #0b2343;
   }
   /* --------- space saver ------------*/
   .imgDiv img {
