@@ -158,7 +158,7 @@ function loadAtom(){
     body.innerHTML = atomLoad
 
     setTimeout(function(){
-        window.location = './atoms.html'; }, 6500);
+        window.location = './atoms.html'; }, 3500);
 }
 
 
@@ -779,5 +779,5 @@ function loadDevCrew(){
   body.innerHTML = devLoad
 
   setTimeout(function(){
-      window.location = './devCrew.html'; }, 6500);
+      window.location = './devCrew.html'; }, 3500);
 }

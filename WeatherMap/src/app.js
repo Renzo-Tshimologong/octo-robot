@@ -14,6 +14,7 @@ const currentTemp = document.getElementById('currentTemp');
 const feelsLike = document.getElementById('feelsLike');
 const description = document.getElementById('description');
 const hourlyForecast = document.getElementById('hourlyForecast');
+const timeZone = document.getElementById('currentLocation')
 
 // get Lat and Long
 const getLocation = () => {
@@ -41,10 +42,6 @@ const fetchCurrentLocation = async locationUrl => {
       console.log(res.json());
     
     })
-    .then(data => {
-      const location = `${data[0].name}, ${data[0].country}`;
-      currentLocation.innerHTML = location;
-    });
 };
 
 // request data from OpenWeatherMap
@@ -52,6 +49,8 @@ const fetchData = async (url) => {
   await fetch(url)
     .then(res => res.json())
     .then(data => {
+      console.log(data.timezone)
+      currentLocation.innerText = data.timezone;
       handleWeather(data);
     })
     .catch(e => console.log(`Fetch Data Error: ${e.message}`));
